@@ -1,22 +1,18 @@
 #include "main.h"
-/**
- * _islower - Shows 1 if the imput is a
- * lowercase character. Another case, shows
- * 0
- *
- * @c: The character in ASCII code
- *
- * Return: 1 for lowercase character. 0 for the rest.
- */
-int -islower(int c)
-{
-	if (c >= 97 && c <= 122)
+
+
+	/**
+	 * _islower - check if char is lowercase
+	 * @c: is the char to be checked
+	 * Return: 1 if char is lowercase, otherwise 0.
+	 */
+
+
+	int _islower(int c)
 	{
-		return (1);
+		if (c >= 'a' && c <= 'z')
+			return (1);
+		else
+			return (0);
 	}
-	else
-	{
-		return (0);
-	}
-	_putchar('\n');
-}
+
